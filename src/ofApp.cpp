@@ -13,6 +13,13 @@ void ofApp::setup() {
 	
 }
 
+void ofApp::setupGui() {
+	parameters.setName("parameters");
+	parameters.add(threshold.set("Threshold", 128, 0, 255));
+	gui.setup(parameters);
+	ofSetBackgroundColor(0);
+}
+
 void ofApp::update() {
 	cam.update();
 	if (cam.isFrameNew()) {
@@ -25,6 +32,10 @@ void ofApp::draw() {
 	ofSetColor(255);
 	cam.draw(0, 0);
 	undistorted.draw(0, 480);
+}
+
+void ofApp::drawGui(ofEventArgs& args) {
+	gui.draw();
 }
 
 void ofApp::keyPressed(int key) {

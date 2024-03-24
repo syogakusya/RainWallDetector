@@ -2,12 +2,16 @@
 
 #include "ofMain.h"
 #include "ofxCv.h"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp {
 public:
 	void setup();
 	void update();
 	void draw();
+
+	void setupGui();
+	void drawGui(ofEventArgs & args);
 	
 	ofVideoGrabber cam;
 	ofImage undistorted;
@@ -25,4 +29,8 @@ public:
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
 		
+
+	ofxPanel gui;
+	ofParameterGroup parameters;
+	ofParameter<float> threshold;
 };
