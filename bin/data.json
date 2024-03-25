@@ -1,0 +1,19 @@
+{
+    "circles": [
+        217.0,
+        175.0,
+        374.0,
+        154.0,
+        433.0,
+        374.0,
+        251.0,
+        405.0
+    ],
+    "contourFinder": {
+        "gamma": 1.5,
+        "invert": true,
+        "maxAreaRadius": 252.5,
+        "minAreaRadius": 14.550000190734863,
+        "threshold": 127.5
+    }
+}
