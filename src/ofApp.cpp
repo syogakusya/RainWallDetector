@@ -52,6 +52,10 @@ void ofApp::draw() {
 	unWarpPersImg.draw(0, 480);
 	threadedContourFinder.draw();
 
+	ofDrawBitmapStringHighlight("MainImage", 4, 14, ofColor(128,0,0));
+	ofDrawBitmapStringHighlight("ProcessingImage", 4, 480 + 14, ofColor(0, 128, 0));
+	ofDrawBitmapStringHighlight("RawImage", 640 + 4, 14, ofColor(0, 0, 128));
+	ofDrawBitmapStringHighlight("UndistortedImage", 640 + 4, 480 + 14, ofColor(128, 128, 0));
 }
 
 void ofApp::drawGui(ofEventArgs& args) {

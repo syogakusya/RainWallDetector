@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<parameters>
+	<Threshold>127.5</Threshold>
+	<Gamma>1.5</Gamma>
+	<MaxAreaRadius>252.5</MaxAreaRadius>
+	<MinAreaRadius>14.55</MinAreaRadius>
+	<Calibaration>0</Calibaration>
+	<Invert>1</Invert>
+</parameters>
